@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: BarterDB
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: DB_HOST
+        value: db4free.net
+      - key: DB_USER
+        value: barterdb_yueyu
+      - key: DB_PASSWORD
+        value: 12345678
+      - key: DB_NAME
+        value: barterdb_yueyu
